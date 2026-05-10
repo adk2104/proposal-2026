@@ -217,6 +217,33 @@
     text-decoration-color: var(--accent);
   }
 
+  /* Org chart figures */
+  figure.org-chart {
+    margin: 24px auto 28px;
+    padding: 20px 12px 12px;
+    text-align: center;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    max-width: 520px;
+  }
+
+  figure.org-chart svg {
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figure.org-chart figcaption {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--text-muted);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
   ul, ol {
     margin: 0 0 20px;
     padding-left: 22px;
@@ -453,6 +480,30 @@
   <div class="credential-block">
     <p class="label">Proposed hierarchy and how I'd fit into the team</p>
     <p>I'd report under <strong>Frank</strong> and work directly with the China tech team. This is a natural fit because I'm already embedded in that workflow and have built genuine rapport with the team:</p>
+
+    <figure class="org-chart" role="figure" aria-labelledby="tech-org-caption">
+      <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg">
+        <rect x="170" y="14" width="140" height="56" rx="8" fill="#FBF9F4" stroke="#3A6951" stroke-width="2"/>
+        <text x="240" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="600" fill="#1F2937">Frank</text>
+        <text x="240" y="58" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#6B7280">China Tech Lead</text>
+        <line x1="240" y1="70" x2="240" y2="98" stroke="#3A6951" stroke-width="2"/>
+        <line x1="80" y1="98" x2="400" y2="98" stroke="#3A6951" stroke-width="2"/>
+        <line x1="80" y1="98" x2="80" y2="135" stroke="#3A6951" stroke-width="2"/>
+        <line x1="240" y1="98" x2="240" y2="135" stroke="#3A6951" stroke-width="2"/>
+        <line x1="400" y1="98" x2="400" y2="135" stroke="#3A6951" stroke-width="2"/>
+        <rect x="10" y="135" width="140" height="56" rx="8" fill="#FBF9F4" stroke="#3A6951" stroke-width="1.5"/>
+        <text x="80" y="161" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="600" fill="#1F2937">Liu YueZu</text>
+        <text x="80" y="179" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#6B7280">Website / Tech</text>
+        <rect x="170" y="135" width="140" height="56" rx="8" fill="#DCE8E2" stroke="#3A6951" stroke-width="2.5"/>
+        <text x="240" y="161" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#2C5240">Aventurina</text>
+        <text x="240" y="179" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#2C5240" font-weight="600">U.S.-Side Liaison</text>
+        <rect x="330" y="135" width="140" height="56" rx="8" fill="#FBF9F4" stroke="#3A6951" stroke-width="1.5"/>
+        <text x="400" y="161" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="600" fill="#1F2937">Wang Zheng</text>
+        <text x="400" y="179" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#6B7280">Design</text>
+      </svg>
+      <figcaption id="tech-org-caption">Proposed tech role: reporting under Frank, collaborating with the China tech team.</figcaption>
+    </figure>
+
     <ul>
       <li>Coordinating with <strong>Liu YueZu (L)</strong> on IMF website marketing copy and implementation.</li>
       <li>Working with <strong>Wang Zheng</strong> to implement English copy across designs.</li>
@@ -507,6 +558,34 @@
   </div>
 
   <h3>Projects and background that inform this role</h3>
+
+  <div class="credential-block">
+    <p class="label">Proposed hierarchy and how I'd fit into the team</p>
+    <p>I'd report under <strong>Tracy</strong> on the marketing side, working directly with the China marketing team. I've already enjoyed collaborating with <strong>Jessica</strong> and <strong>Georgina</strong> through Q1, and the working relationships are established.</p>
+
+    <figure class="org-chart" role="figure" aria-labelledby="mkt-org-caption">
+      <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg">
+        <rect x="170" y="14" width="140" height="56" rx="8" fill="#FBF9F4" stroke="#3A6951" stroke-width="2"/>
+        <text x="240" y="40" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="600" fill="#1F2937">Tracy</text>
+        <text x="240" y="58" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="11" fill="#6B7280">Head of Marketing</text>
+        <line x1="240" y1="70" x2="240" y2="98" stroke="#3A6951" stroke-width="2"/>
+        <line x1="80" y1="98" x2="400" y2="98" stroke="#3A6951" stroke-width="2"/>
+        <line x1="80" y1="98" x2="80" y2="135" stroke="#3A6951" stroke-width="2"/>
+        <line x1="240" y1="98" x2="240" y2="135" stroke="#3A6951" stroke-width="2"/>
+        <line x1="400" y1="98" x2="400" y2="135" stroke="#3A6951" stroke-width="2"/>
+        <rect x="10" y="135" width="140" height="56" rx="8" fill="#FBF9F4" stroke="#3A6951" stroke-width="1.5"/>
+        <text x="80" y="161" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="600" fill="#1F2937">Jessica</text>
+        <text x="80" y="179" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#6B7280">Marketing Team</text>
+        <rect x="170" y="135" width="140" height="56" rx="8" fill="#DCE8E2" stroke="#3A6951" stroke-width="2.5"/>
+        <text x="240" y="161" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#2C5240">Aventurina</text>
+        <text x="240" y="179" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#2C5240" font-weight="600">U.S.-Side Liaison</text>
+        <rect x="330" y="135" width="140" height="56" rx="8" fill="#FBF9F4" stroke="#3A6951" stroke-width="1.5"/>
+        <text x="400" y="161" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="600" fill="#1F2937">Georgina</text>
+        <text x="400" y="179" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#6B7280">Content Coordinator</text>
+      </svg>
+      <figcaption id="mkt-org-caption">Proposed marketing role: reporting under Tracy, collaborating with the China marketing team.</figcaption>
+    </figure>
+  </div>
 
   <div class="credential-block">
     <p class="label">Journalism and editorial credentials (the credential Owen named)</p>

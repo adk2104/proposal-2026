@@ -212,6 +212,33 @@
     text-decoration-color: var(--accent);
   }
 
+  /* Org chart figures */
+  figure.org-chart {
+    margin: 24px auto 28px;
+    padding: 20px 12px 12px;
+    text-align: center;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    max-width: 520px;
+  }
+
+  figure.org-chart svg {
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  figure.org-chart figcaption {
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--text-muted);
+    font-style: italic;
+    line-height: 1.6;
+  }
+
   ul, ol {
     margin: 0 0 20px;
     padding-left: 22px;
@@ -441,6 +468,30 @@
   <div class="credential-block">
     <p class="label">提议的层级结构及我在团队中的定位</p>
     <p>我将向 <strong>Frank</strong> 汇报，并与中国技术团队直接合作。这是一个自然的匹配，因为我已经融入了他们的工作流程，并与团队建立了真正的融洽关系：</p>
+
+    <figure class="org-chart" role="figure" aria-labelledby="tech-org-caption-zh">
+      <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg">
+        <rect x="170" y="14" width="140" height="56" rx="8" fill="#FBF9F4" stroke="#3A6951" stroke-width="2"/>
+        <text x="240" y="40" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="16" font-weight="600" fill="#1F2937">Frank</text>
+        <text x="240" y="58" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="11" fill="#6B7280">中国技术负责人</text>
+        <line x1="240" y1="70" x2="240" y2="98" stroke="#3A6951" stroke-width="2"/>
+        <line x1="80" y1="98" x2="400" y2="98" stroke="#3A6951" stroke-width="2"/>
+        <line x1="80" y1="98" x2="80" y2="135" stroke="#3A6951" stroke-width="2"/>
+        <line x1="240" y1="98" x2="240" y2="135" stroke="#3A6951" stroke-width="2"/>
+        <line x1="400" y1="98" x2="400" y2="135" stroke="#3A6951" stroke-width="2"/>
+        <rect x="10" y="135" width="140" height="56" rx="8" fill="#FBF9F4" stroke="#3A6951" stroke-width="1.5"/>
+        <text x="80" y="161" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="14" font-weight="600" fill="#1F2937">刘跃祖</text>
+        <text x="80" y="179" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="11" fill="#6B7280">网站 / 技术</text>
+        <rect x="170" y="135" width="140" height="56" rx="8" fill="#DCE8E2" stroke="#3A6951" stroke-width="2.5"/>
+        <text x="240" y="161" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="14" font-weight="700" fill="#2C5240">小鱼</text>
+        <text x="240" y="179" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="11" fill="#2C5240" font-weight="600">美国侧联络官</text>
+        <rect x="330" y="135" width="140" height="56" rx="8" fill="#FBF9F4" stroke="#3A6951" stroke-width="1.5"/>
+        <text x="400" y="161" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="14" font-weight="600" fill="#1F2937">王正</text>
+        <text x="400" y="179" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="11" fill="#6B7280">设计</text>
+      </svg>
+      <figcaption id="tech-org-caption-zh">提议的技术职位结构：向 Frank 汇报，与中国技术团队协作。</figcaption>
+    </figure>
+
     <ul>
       <li>与<strong>刘跃祖（L）</strong>协调 IMF 网站营销文案和实施。</li>
       <li>与<strong>王正</strong>合作，在设计稿中实施英文文案。</li>
@@ -495,6 +546,34 @@
   </div>
 
   <h3>支撑此角色的项目与背景</h3>
+
+  <div class="credential-block">
+    <p class="label">提议的层级结构及我在团队中的定位</p>
+    <p>在营销职位上，我将向 <strong>Tracy</strong> 汇报，并与中国营销团队直接合作。第一季度我已与 <strong>Jessica</strong> 和 <strong>Georgina</strong> 愉快合作，工作默契已经建立。</p>
+
+    <figure class="org-chart" role="figure" aria-labelledby="mkt-org-caption-zh">
+      <svg viewBox="0 0 480 220" xmlns="http://www.w3.org/2000/svg">
+        <rect x="170" y="14" width="140" height="56" rx="8" fill="#FBF9F4" stroke="#3A6951" stroke-width="2"/>
+        <text x="240" y="40" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="16" font-weight="600" fill="#1F2937">Tracy</text>
+        <text x="240" y="58" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="11" fill="#6B7280">营销负责人</text>
+        <line x1="240" y1="70" x2="240" y2="98" stroke="#3A6951" stroke-width="2"/>
+        <line x1="80" y1="98" x2="400" y2="98" stroke="#3A6951" stroke-width="2"/>
+        <line x1="80" y1="98" x2="80" y2="135" stroke="#3A6951" stroke-width="2"/>
+        <line x1="240" y1="98" x2="240" y2="135" stroke="#3A6951" stroke-width="2"/>
+        <line x1="400" y1="98" x2="400" y2="135" stroke="#3A6951" stroke-width="2"/>
+        <rect x="10" y="135" width="140" height="56" rx="8" fill="#FBF9F4" stroke="#3A6951" stroke-width="1.5"/>
+        <text x="80" y="161" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="14" font-weight="600" fill="#1F2937">Jessica</text>
+        <text x="80" y="179" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="11" fill="#6B7280">营销团队</text>
+        <rect x="170" y="135" width="140" height="56" rx="8" fill="#DCE8E2" stroke="#3A6951" stroke-width="2.5"/>
+        <text x="240" y="161" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="14" font-weight="700" fill="#2C5240">小鱼</text>
+        <text x="240" y="179" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="11" fill="#2C5240" font-weight="600">美国侧联络官</text>
+        <rect x="330" y="135" width="140" height="56" rx="8" fill="#FBF9F4" stroke="#3A6951" stroke-width="1.5"/>
+        <text x="400" y="161" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="14" font-weight="600" fill="#1F2937">Georgina</text>
+        <text x="400" y="179" text-anchor="middle" font-family="-apple-system, PingFang SC, sans-serif" font-size="11" fill="#6B7280">内容协调</text>
+      </svg>
+      <figcaption id="mkt-org-caption-zh">提议的营销职位结构：向 Tracy 汇报，与中国营销团队协作。</figcaption>
+    </figure>
+  </div>
 
   <div class="credential-block">
     <p class="label">新闻与编辑资质（Owen 提到的资质）</p>
