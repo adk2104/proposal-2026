@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Proposal for the Parent Company — Aventurina King · May 2026</title>
+<meta name="description" content="A role proposal by Aventurina King, prepared for Owen following the May 6, 2026 conversation.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<style>
+  :root {
+    --bg: #FBF9F4;
+    --bg-alt: #F3EDE0;
+    --bg-callout: #EFE9DC;
+    --text: #1F2937;
+    --text-muted: #6B7280;
+    --accent: #3A6951;
+    --accent-dark: #2C5240;
+    --accent-light: #DCE8E2;
+    --border: #E5DFD3;
+    --shadow: 0 1px 3px rgba(31, 41, 55, 0.06), 0 4px 12px rgba(31, 41, 55, 0.04);
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ------- Header ------- */
+  header.site-header {
+    text-align: center;
+    padding: 64px 24px 32px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    position: relative;
+  }
+
+  /* Language Switcher */
+  .lang-switch {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    gap: 4px;
+    background: var(--bg-alt);
+    border-radius: 20px;
+    padding: 4px;
+    font-size: 13px;
+  }
+
+  .lang-switch a, .lang-switch span {
+    padding: 5px 12px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .lang-switch .active {
+    background: var(--accent);
+    color: white;
+  }
+
+  .lang-switch a:hover {
+    color: var(--accent-dark);
+  }
+
+  header.site-header h1 {
+    margin: 0 0 12px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+  }
+
+  header.site-header .meta {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  header.site-header .meta strong {
+    color: var(--accent-dark);
+    font-weight: 600;
+  }
+
+  /* ------- Tabs Nav ------- */
+  nav.tabs {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  nav.tabs::-webkit-scrollbar { display: none; }
+
+  nav.tabs .tabs-inner {
+    display: flex;
+    gap: 4px;
+    max-width: 920px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav.tabs button {
+    background: transparent;
+    border: none;
+    padding: 18px 20px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    white-space: nowrap;
+  }
+
+  nav.tabs button:hover {
+    color: var(--accent-dark);
+  }
+
+  nav.tabs button.active {
+    color: var(--accent-dark);
+    border-bottom-color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* ------- Main Content ------- */
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+
+  .tab-content { display: none; }
+  .tab-content.active { display: block; animation: fadeIn 0.25s ease; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ------- Typography ------- */
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(24px, 3vw, 30px);
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 8px;
+    line-height: 1.3;
+    letter-spacing: -0.005em;
+  }
+
+  h2 + .subhead {
+    color: var(--accent-dark);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 0 0 28px;
+  }
+
+  h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 40px 0 14px;
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 28px 0 10px;
+    line-height: 1.4;
+  }
+
+  p { margin: 0 0 16px; }
+
+  strong { font-weight: 600; color: var(--text); }
+  em { font-style: italic; }
+
+  main a {
+    color: var(--accent-dark);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-light);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.15s ease;
+  }
+
+  main a:hover {
+    text-decoration-color: var(--accent);
+  }
+
+  ul, ol {
+    margin: 0 0 20px;
+    padding-left: 22px;
+  }
+
+  ul li, ol li {
+    margin-bottom: 12px;
+  }
+
+  ul li::marker {
+    color: var(--accent);
+  }
+
+  ol li::marker {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* ------- Callouts ------- */
+  .callout {
+    background: var(--bg-callout);
+    border-left: 3px solid var(--accent);
+    padding: 22px 26px;
+    margin: 28px 0;
+    border-radius: 4px;
+  }
+
+  .callout h3 {
+    margin-top: 0;
+    color: var(--accent-dark);
+  }
+
+  .callout p:last-child { margin-bottom: 0; }
+
+  .callout .source {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-style: italic;
+    margin: 12px 0 0;
+  }
+
+  /* ------- Sub-credential blocks ------- */
+  .credential-block {
+    margin: 24px 0;
+  }
+
+  .credential-block .label {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 12px;
+  }
+
+  /* ------- Signature ------- */
+  .signature {
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  .signature strong {
+    display: block;
+    margin-top: 6px;
+    font-style: normal;
+    color: var(--accent-dark);
+    font-size: 18px;
+  }
+
+  /* ------- Footer ------- */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 24px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+
+  footer a {
+    color: var(--accent-dark);
+    text-decoration: none;
+    margin: 0 12px;
+  }
+
+  footer a:hover { text-decoration: underline; }
+
+  /* ------- Tag chip (used in opening) ------- */
+  .fit-chip {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--accent-light);
+    color: var(--accent-dark);
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+
+  /* ------- Mobile ------- */
+  @media (max-width: 640px) {
+    header.site-header { padding: 56px 18px 24px; }
+    .lang-switch { top: 14px; right: 14px; font-size: 12px; }
+    main { padding: 32px 18px 64px; }
+    nav.tabs { padding: 0 8px; }
+    nav.tabs button { padding: 14px 14px; font-size: 14px; }
+    .callout { padding: 18px 20px; }
+  }
+
+  /* ------- Print ------- */
+  @media print {
+    nav.tabs, footer, .lang-switch { display: none; }
+    .tab-content { display: block !important; page-break-before: always; }
+    .tab-content:first-of-type { page-break-before: auto; }
+    body { font-size: 12pt; }
+    header.site-header { border-bottom: 1px solid #333; }
+    .callout { border: 1px solid #ccc; background: #f8f8f8; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="lang-switch">
+    <span class="active">English</span>
+    <a href="zh.html">中文</a>
+  </div>
+  <h1>How I Can Be of Service to the Parent Company</h1>
+  <p class="meta"><strong>Aventurina King</strong> &middot; May 2026 &middot; Prepared for Owen, following our conversation on May 6, 2026</p>
+</header>
+
+<nav class="tabs">
+  <div class="tabs-inner">
+    <button data-tab="opening" class="active">Opening</button>
+    <button data-tab="tech">Tech Role <span style="opacity:0.6;font-weight:500;">· Primary</span></button>
+    <button data-tab="marketing">Marketing Role <span style="opacity:0.6;font-weight:500;">· Secondary</span></button>
+    <button data-tab="transition">Transition &amp; Terms</button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ OPENING ============ -->
+<section id="opening" class="tab-content active">
+  <h2>Opening</h2>
+  <p class="subhead">A note from Aventurina, May 2026</p>
+
+  <p>Owen, thank you again for the conversation on May 6. As you asked, this document is organized around exactly how I could be of most service to the parent company.</p>
+
+  <p>Two roles emerged from our conversation. I want to be honest about my preference: the <strong>tech role is the primary fit</strong>, and the role I most want to grow into. The <strong>marketing role with Tracy is the secondary fit</strong>, anchored to the journalism background you graciously surfaced. I'd be glad to serve in either, and I see paths where elements of both could combine.</p>
+
+  <p>I've also addressed your concern about IMF &mdash; what I'd transition, who could continue the work, and what timeline makes sense &mdash; and the question of full-time vs part-time structure.</p>
+
+  <p>This is my best thinking on where I could add the most value to you, to Tracy, to Frank, and to the broader parent company over the next year and beyond. I trust your guidance on what's possible from where you sit.</p>
+
+  <div class="callout">
+    <h3>How to read this proposal</h3>
+    <ul style="margin-bottom:0;">
+      <li><strong>Tech Role</strong> &mdash; my primary fit. U.S. localization for new tech products, plus AI strategy across the parent company. <span class="fit-chip">Primary</span></li>
+      <li><strong>Marketing Role</strong> &mdash; secondary fit, in-house U.S. partner to Tracy, anchored to the DHgate rebrand. <span class="fit-chip">Secondary</span></li>
+      <li><strong>Transition &amp; Terms</strong> &mdash; full-time vs part-time, the IMF handoff plan, timeline, compensation.</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ============ TECH ROLE ============ -->
+<section id="tech" class="tab-content">
+  <h2>Role 1: U.S. Tech Liaison + AI Strategy</h2>
+  <p class="subhead">Primary Fit</p>
+
+  <h3>What I would own</h3>
+  <p>A single role covering two related halves the parent company doesn't currently have anyone bilingual filling on the U.S. side:</p>
+
+  <h4>Half A &mdash; U.S. research and localization for any new tech product the parent company builds</h4>
+  <p>For every new tech product (the new IMF conversational AI app; MyyShop's incoming digital products; future builds across the parent company), I would own:</p>
+  <ul>
+    <li><strong>U.S. market research before the build.</strong> What does the U.S. landscape look like for this category? How are similar products typically positioned, packaged, and rolled out here? What do American users actually expect from the experience?</li>
+    <li><strong>Cultural and language localization, informed during the build, not after it.</strong> Copy, UX language, onboarding flows, naming, visual aesthetics &mdash; tuned for an American audience while the product is still being designed, not after a launch.</li>
+    <li><strong>Marketing copy and design feedback,</strong> in coordination with the China team's designers (already working with Wang Zheng on English copy across IMF designs) and tech leads (already coordinating with Liu YueZu on the IMF website).</li>
+  </ul>
+
+  <h4>Half B &mdash; AI systems and automation for the parent company's U.S.-based businesses</h4>
+  <p>New AI tools come out of the U.S. every week. Most never make it back to the China side because no one bilingual is watching this ecosystem from the inside. I would:</p>
+  <ul>
+    <li><strong>Scout, test, and deploy AI tools</strong> that make each U.S.-based business more efficient.</li>
+    <li><strong>Build custom AI agents</strong> for specific business problems. Concrete example: I had an early conversation with Kenan at MyyShop about an AI framework for influencer outreach. Their work right now is very outreach-heavy and uses a lot of manpower. I could build an automated agent system &mdash; scraping sources like Apify for influencer and company data, qualifying fit, drafting personalized outreach &mdash; that would streamline the whole pipeline.</li>
+  </ul>
+
+  <h4>Plus, regardless of which role we land on: ongoing direct support to Diane</h4>
+  <ul>
+    <li>Always available to Diane personally &mdash; for U.S.-side interview prep, content reviews, or any other support she needs from me directly. This stays in scope no matter how the rest of the role is structured.</li>
+  </ul>
+
+  <h3>Day-to-day shape</h3>
+  <ul>
+    <li><strong>Deliverable work, Monday through Friday.</strong> Research, builds, copy, and design feedback throughout the full work week.</li>
+    <li><strong>Regular weekly calls with the China tech team: 1&ndash;1.5 hours, 2&ndash;3 times per week (for example, every Monday and every Wednesday).</strong> Slotted Mon&ndash;Thu evenings LA time, which is mid-morning China time (10:00&ndash;11:30 AM) and fits Frank, Liu YueZu, and the broader tech team's working hours.</li>
+    <li><strong>Daytime focus on U.S.-side AI implementation work</strong> for MyyShop and other U.S.-headquartered businesses &mdash; meeting with Kenan and his team, building agents, deploying tools.</li>
+    <li><strong>Available for non-regular meetings during U.S. work hours on weekdays, with sufficient advance notice</strong> &mdash; ad-hoc syncs, special meetings with Tracy or Diane, or anything outside the regular China tech cadence.</li>
+    <li><strong>My orientation on meetings:</strong> I want the role focused on deliverables, not meeting overhead. Predictable recurring slots plus advance-notice ad-hoc meetings give us strong communication without losing the deep-work time that actually moves projects forward.</li>
+  </ul>
+
+  <h3>How this serves the bottom line</h3>
+  <ol>
+    <li><strong>Faster product-market fit on the first try.</strong> Instead of building a product in China, launching in the U.S., watching it underperform, and then localizing &mdash; the U.S. perspective is in the room from day one. Months saved per launch.</li>
+    <li><strong>AI leverage at parent-company scale.</strong> A single bilingual AI builder can deploy systems across IMF, MyyShop, and DHgate that would otherwise require multiple agencies or full teams.</li>
+    <li><strong>Lower cost and higher loyalty than an outside agency.</strong> An in-house person carries institutional context across all three businesses. An agency learns from scratch each time.</li>
+    <li><strong>A reliable bridge for U.S. services that can be hard to reach from China through VPN</strong> &mdash; practical execution that doesn't show up on org charts but matters every week.</li>
+  </ol>
+
+  <div class="callout">
+    <h3>Cautionary tale: what happens without U.S. localization in the room</h3>
+    <p>A recent and directly relevant example: <strong>TikTok Shop in the U.S. (2024&ndash;2026).</strong> TikTok Shop's initial marketplace launch relied heavily on Chinese sellers who lacked English fluency and U.S. cultural fluency. The platform's own quality-rating system flagged the problem internally: "poor native English experience, hosts with weak English skills or mixing Chinese and English, too many Chinese cultural elements, or content that doesn't match local cultural norms." Conversion suffered. User experience suffered.</p>
+    <p>The fix was exactly the role I'm proposing: TikTok deliberately limited cross-border live streams and recruited U.S.-localized content creators and hosts with native English expertise. ByteDance's broader U.S. strategy followed the same pattern &mdash; modifying content algorithms for U.S. cultural preferences and hiring local teams to manage market-specific operations.</p>
+    <p>The lesson for the parent company is simple: <strong>localization is not translation, and it has to happen during the build, not after a launch.</strong> A bilingual American with cultural fluency, technical instinct, and product judgment in the room from day one is the cheapest insurance policy a Chinese company expanding to the U.S. can buy.</p>
+    <p class="source">Source: Chinesellers analysis of TikTok Shop U.S. launch (2026); TSU research on ByteDance global localization strategy.</p>
+  </div>
+
+  <h3>Projects and background that inform this role</h3>
+
+  <div class="credential-block">
+    <p class="label">Builder credentials</p>
+    <ul>
+      <li><strong><a href="https://www.oasifysocial.com" target="_blank" rel="noopener">Oasify Social</a></strong> &mdash; a full social media intelligence app I built (live at <a href="https://www.oasifysocial.com" target="_blank" rel="noopener">www.oasifysocial.com</a>). React Router + Drizzle ORM + Vite + Postgres stack, with Meta/Instagram and Google OAuth integrations, AI-driven content sync algorithms, and prompt validation across multiple model providers (GPT-4o, Claude Haiku/Sonnet, Gemini Flash). I'm transparent that I hired an engineer to teach me along the way, and we built the app together &mdash; that means I have a deeper, working understanding of modern tech frameworks, not just surface familiarity.</li>
+      <li><strong>AI Agent Bootcamp (1 month, intensive)</strong> &mdash; built and deployed AI agents in Python and VS Code. Completed intermediate Python coursework before and alongside the bootcamp.</li>
+      <li><strong>Outreach AI Agent I built and deployed in production.</strong> Pulled lead lists from Apollo, scraped each prospect's website to qualify fit, generated personalized keywords, and fed them into a cold email campaign. Result: ~80% open rate, ~10% reply rate. Built end to end in Python with VS Code.</li>
+      <li><strong>Ongoing self-directed study in machine learning fundamentals</strong> to deepen my understanding of how the AI tools I deploy actually work under the hood &mdash; supporting smarter scouting, evaluation, and integration of new AI products as they come out of the U.S. market.</li>
+    </ul>
+  </div>
+
+  <div class="credential-block">
+    <p class="label">Proposed hierarchy and how I'd fit into the team</p>
+    <p>I'd report under <strong>Frank</strong> and work directly with the China tech team. This is a natural fit because I'm already embedded in that workflow and have built genuine rapport with the team:</p>
+    <ul>
+      <li>Coordinating with <strong>Liu YueZu (L)</strong> on IMF website marketing copy and implementation.</li>
+      <li>Working with <strong>Wang Zheng</strong> to implement English copy across designs.</li>
+      <li>Already had an early conversation with <strong>Kenan at MyyShop</strong> about an AI framework for influencer outreach &mdash; he was genuinely interested.</li>
+    </ul>
+  </div>
+
+  <div class="credential-block">
+    <p class="label">Bilingual + cross-cultural credentials that strengthen this role</p>
+    <ul>
+      <li>Native bilingual (English + Mandarin) with deep working knowledge of both business cultures.</li>
+      <li>Cultural translation work at the highest professional level (see Marketing tab background &mdash; much of the same credential set serves both roles).</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ============ MARKETING ROLE ============ -->
+<section id="marketing" class="tab-content">
+  <h2>Role 2: U.S. In-House Marketing Liaison with Tracy</h2>
+  <p class="subhead">Secondary Fit</p>
+
+  <h3>What I would own</h3>
+  <p>This role is broader strategy for the parent company's U.S. expansion. The most active engagement right now is the DHgate rebrand under Tracy &mdash; that's where the demand is and where I'd start. Over time the same role would extend to other U.S. expansion work as it surfaces across the parent company.</p>
+
+  <p>Five pillars, all anchored around being Tracy's in-house U.S. partner:</p>
+
+  <ol>
+    <li><strong>In-house go-between with the agency Tracy hires (MeiXun).</strong> Sit in on agency meetings as a U.S.-side bridge. Verify execution and quality on the ground in ways that are hard to do from China &mdash; partly because of VPN and website-access constraints, partly because cultural nuance only lands when you're inside the market. The contacts and learnings the agency accumulates flow through me, which means they stay with DHgate when the agency engagement ends (more on this in pillar 5).</li>
+    <li><strong>Research and amplification.</strong> As the agency works, I look for fresh angles, new pathways, and ways to extend reach beyond what an agency on retainer will surface. Research is one of my deepest strengths &mdash; I love going underneath the surface of a problem to find the angle no one else is looking at.</li>
+    <li><strong>Influencer liaison for the DHgate rebrand.</strong> Direct relationships with U.S. influencers who'll be involved in the rebrand &mdash; including those visiting China. Make sure what they post lands well, aligns with brand goals, and reflects the company you're building. This is exactly the role you named in our conversation. <strong>I've done this work before:</strong> in earlier brand campaigns with U.S. MCNs (multi-channel networks), I managed influencer programs for major brands including <strong>Clarins</strong>, where the core of my role was making sure each creator's content stayed tightly aligned with the brand voice. That same alignment work is exactly what the DHgate rebrand will need.</li>
+    <li><strong>PR strategy informed by my journalism background.</strong> The U.S. has a specific perception of China-origin brands that has to be navigated, not ignored. I can shape PR narratives, language, and positioning so the brand differentiates rather than fights the headwind. American press has tells that a U.S. journalist learns to read; I can use those tells to land coverage that helps the company.</li>
+    <li><strong>In-house value retention.</strong> The single biggest argument for hiring me on this rather than relying on an agency alone: <strong>the relationships I build stay with the parent company.</strong> When the agency engagement ends, agency contacts leave with the agency. When I build a relationship with an influencer, a journalist, a community member, that relationship belongs to IMF/DHgate/the parent company in perpetuity.</li>
+  </ol>
+
+  <p><strong>Plus, regardless of which role we land on: ongoing direct support to Diane.</strong> Always available to Diane personally &mdash; for U.S.-side interview prep, content reviews, or any other support she needs from me directly. This stays in scope no matter how the rest of the role is structured.</p>
+
+  <h3>How this serves the bottom line</h3>
+  <ul>
+    <li><strong>The agency engagement runs smoother with me as the in-house bridge.</strong> Tracy is hiring the agency regardless &mdash; the question is whether the parent company gets full value from that relationship, or partial value. With me embedded as the U.S.-side liaison: fewer redundant briefs, less translation drag, faster turnarounds, and the relationship capital (contacts, learnings, institutional memory) compounds inside the company instead of evaporating when the agency engagement ends.</li>
+    <li><strong>Faster reaction time</strong> &mdash; when something is going off, a U.S. in-house person can intervene in hours, not in the next scheduled status meeting.</li>
+    <li><strong>Strategic depth that an agency on retainer won't bring</strong> &mdash; agencies execute against scope. An in-house partner sees adjacent opportunities and brings them.</li>
+    <li><strong>Cultural insurance</strong> &mdash; the U.S. perception of China-origin brands is a real PR variable; navigating it takes someone who lives in both worlds.</li>
+  </ul>
+
+  <div class="callout">
+    <h3>A worked example: the William Rossy YouTube funnel</h3>
+    <p>When the China team coordinated Diane's interview with William Rossy, the team's instinct was to celebrate the published video and move on. I saw a funnel opportunity that wouldn't have been visible from the China side.</p>
+    <p>I researched William Rossy's existing offerings to understand what he could and couldn't do without conflicting with his own marketing. Then I crafted a comment for him to pin and a description-line addition that would route his audience's curiosity about Diane straight into the IMF community and the IMF website. He accepted.</p>
+    <p>The result was a meaningful surge of new IMF community members &mdash; attention around Diane that would otherwise have stayed on William Rossy's channel was funneled into the company's owned audience.</p>
+    <p>This is the kind of value an in-house U.S. partner adds that an agency typically doesn't: not just running the campaign, but seeing the second-order opportunity inside someone else's deliverable.</p>
+  </div>
+
+  <h3>Projects and background that inform this role</h3>
+
+  <div class="credential-block">
+    <p class="label">Journalism and editorial credentials (the credential Owen named)</p>
+    <ul>
+      <li><strong>Freelance writer for The New York Times,</strong> covering Chinese arts and culture.</li>
+      <li><strong>Editor of translations for the Oxford Chinese-English Dictionary</strong> &mdash; bilingual editorial credibility at the highest level.</li>
+      <li><strong>PR manager at HuaYi Brothers</strong> &mdash; took the studio from having effectively no U.S. press recognition to dozens of features in major American publications, including a <em>New York Times</em> feature I personally helped land through targeted positioning and pitching.</li>
+    </ul>
+  </div>
+
+  <div class="credential-block">
+    <p class="label">Cross-cultural marketing agency leadership</p>
+    <ul>
+      <li><strong>Led the White Rabbit US social media campaign</strong> &mdash; 100,000+ views, onboarded 40+ influencers for a viral ad campaign, contributed to $4 million in annual revenue in the US.</li>
+      <li><strong>Influencer alignment work with Clarins (and other U.S. brands via MCN partnerships)</strong> &mdash; managed multi-creator campaigns where the core of the role was keeping each influencer's content tightly aligned with brand voice and positioning.</li>
+    </ul>
+  </div>
+
+  <div class="credential-block">
+    <p class="label">Live IMF examples</p>
+    <ul>
+      <li><strong>WhatsApp community.</strong> Built from zero. Now an actively engaged community where members talk to each other every day. Designed fun polls and engagement structures that drove the daily-active behavior.</li>
+      <li><strong>Q1 2026 social media performance vs contract OKRs &mdash; hit or exceeded across the board.</strong> Followers: TikTok averaged +128/month (28% above the +100 target); Instagram accelerated to +207 in March alone. <strong>Views: delivered ~10x the contract target in Q1's final month &mdash; 344K total views in March against a 35K target.</strong> Engagement rate above the 3% contract target every month, peaking at 7.7% blended in March. Top viral post: <strong>230K views, 17K likes, 6,000 saves.</strong></li>
+      <li><strong>William Rossy YouTube funnel</strong> (described above).</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ============ TRANSITION & TERMS ============ -->
+<section id="transition" class="tab-content">
+  <h2>Transition &amp; Terms</h2>
+  <p class="subhead">Full-time vs part-time, IMF handoff, timeline, compensation</p>
+
+  <h3>On full-time vs part-time</h3>
+  <p>You named full-time as the parent company's preference, and I want to address that directly rather than leaving it open.</p>
+
+  <p>My honest position: I deliver full-time output as a part-time hire because of how I work. Strong systems, automation, and process design let one person produce what used to take a full team.</p>
+
+  <p>Here's the structural argument. <strong>In a typical U.S. company, social media content production, cold email outreach, and digital advertising would each have its own dedicated team &mdash; three teams, often with multiple people each. I run all three as one person, with well-designed systems and processes carrying the leverage.</strong> Concrete IMF examples from just the last few months:</p>
+
+  <ul>
+    <li><strong>Daily original social media content posted across seven platforms every weekday.</strong> A volume that would normally require a small content team plus a community manager.</li>
+    <li><strong>Email campaigns at scale,</strong> including thousands of emails through the Instantly infrastructure I set up &mdash; 40 inboxes onboarded, A/B-tested cold email pipeline ready to run. A full cold email function in one person.</li>
+    <li><strong>The IMF website build</strong> I helped construct and copywrite, which has funneled approximately <strong>75 new community members</strong> into the IMF ecosystem in just the last few weeks.</li>
+    <li><strong>WhatsApp community</strong> built from zero to 71 actively engaged members in the space of a couple months, with members talking to each other every day.</li>
+  </ul>
+
+  <p>I share this not to relitigate the past, but to make the case that <strong>the leverage I bring is structural, not effort-based</strong>. A part-time arrangement with me gives the parent company more output per dollar than most full-time hires would.</p>
+
+  <p>One more thing worth naming. As IMF's scope has expanded over the last several months &mdash; from social media into email infrastructure, community building, PR support, the lead magnet funnel, and the website build &mdash; I haven't asked for a corresponding pay increase. I see the parent company as an established business that still operates with start-up energy in the U.S., and start-up energy requires flexibility, range, and ownership. I've shown up to that with all three, and I'd carry the same orientation into whatever the new role becomes.</p>
+
+  <p>I hear your preference for full-time, and I'm open to discussing structure as we design the new role. I want the conversation to follow the work &mdash; once we know what the new role actually is and what it actually requires, the right structure becomes clearer.</p>
+
+  <h3>On transitioning out of my current IMF responsibilities</h3>
+  <p>In our May 6 conversation I mentioned I could keep some of the aligned IMF work even after a role change. On reflection, the cleaner path &mdash; for IMF, for the parent company, and for me &mdash; is a <strong>full structured handoff</strong>. Here's the scope, the why, and the how.</p>
+
+  <h4>Scope of the handoff</h4>
+  <p>Everything I currently own under the IMF U.S. masterclass marketing scope transitions cleanly to a replacement:</p>
+  <ul>
+    <li>All social media production across the seven platforms</li>
+    <li>The WhatsApp community</li>
+    <li>The Friday newsletter</li>
+    <li>The email campaign infrastructure (Instantly, the 40 inboxes, the Q2 architecture)</li>
+    <li>The HubSpot lead magnet funnel</li>
+    <li>Content production systems and the script pipeline</li>
+    <li>All ongoing coordination with Annie on the email/HubSpot side</li>
+  </ul>
+  <p>None of this stays with me in the new role. It moves cleanly to the replacement so IMF U.S. has one accountable owner, not a split.</p>
+
+  <h4>Reporting line</h4>
+  <p>My new role would sit under your judgment &mdash; likely Tracy on the marketing side or Frank on the tech side &mdash; not under the IMF U.S. masterclass team. I'd interact with Debi only as a peer, when she's a stakeholder on a project I'm running for Tracy or Frank. This is the cleanest structure for everyone: Debi has full ownership of IMF U.S. with a dedicated replacement running her day-to-day, and I move into the work where my strengths compound.</p>
+
+  <h4>Why a junior replacement for IMF could work (and could cost less)</h4>
+  <p>Because the framework already exists, the replacement doesn't need to be senior. A capable junior marketer who can execute well-documented playbooks can run the IMF day-to-day at meaningfully lower cost than my current retainer. The strategic and creative work &mdash; the part that justifies a higher cost &mdash; has already been built and systematized.</p>
+  <p><strong>This is financially better for the parent company:</strong> you get a trained junior running a fully documented system, while I move into a role where my tech and strategic strengths actually compound across IMF, MyyShop, and DHgate.</p>
+
+  <h4>What I'm prepared to do</h4>
+  <ul>
+    <li><strong>Full documentation of every system I've built</strong> &mdash; social media engine, WhatsApp playbook, email infrastructure, HubSpot funnel, Friday newsletter format, content pipeline. The replacement learns to run the systems, not invent them.</li>
+    <li><strong>Direct partnership with the replacement during the overlap.</strong> I'm available to coach, troubleshoot, and unblock. After the handoff is complete, I'm available for periodic touchpoints if useful.</li>
+  </ul>
+
+  <h4>Proposed timeline</h4>
+  <ul>
+    <li><strong>May 11 &ndash; May 30:</strong> We scope out the shape of the new role together &mdash; this private build window we're already in.</li>
+    <li><strong>Upon confirmation of the role:</strong> I have the handoff conversation with Debi.</li>
+    <li><strong>June 1 &ndash; July 31:</strong> Two-month overlap. I train the junior IMF replacement while continuing all current IMF deliverables at the current quality.</li>
+    <li><strong>August 1, 2026:</strong> New role begins. My current IMF contract ends naturally on July 31, 2026, so this lines up cleanly with the renewal cycle &mdash; a planned transition rather than a hard cutover.</li>
+  </ul>
+
+  <h3>On compensation</h3>
+  <p>I want to name a number here so the structure conversation can keep moving rather than getting stuck at the end. <strong>For the new role, I'd propose maintaining my current retainer of $7,550/month.</strong></p>
+
+  <p>The reason: my retainer stays flat, but the scope expands meaningfully beyond my current IMF marketing role. <strong>In the tech role (my primary fit)</strong>, that means U.S. localization for the new IMF AI app (under Frank), MyyShop's digital products, plus AI strategy and agent-building work across the parent company. <strong>In the marketing role (secondary fit)</strong>, it's the DHgate rebrand under Tracy plus broader U.S. expansion strategy.</p>
+
+  <p><strong>To be fully transparent: total parent-company spend on this scope will increase modestly, because you'd be paying both my $7,550/month retainer (for the new role) and a junior replacement (for IMF).</strong> But here's what that increase buys:</p>
+
+  <ul>
+    <li><strong>Same retainer, broader strategic reach</strong> &mdash; instead of one business line (IMF marketing alone), the new role spans multiple parts of the parent company. <strong>Tech role:</strong> U.S. localization for the new IMF AI app (under Frank &mdash; separate from the IMF marketing scope I'm handing off), MyyShop's digital products, plus AI strategy across all three businesses. <strong>Marketing role:</strong> DHgate rebrand under Tracy plus broader U.S. expansion strategy.</li>
+    <li><strong>U.S. localization and AI strategy work in-house,</strong> which would otherwise require hiring outside specialists or agencies at substantially higher cost.</li>
+    <li><strong>A junior IMF lead at meaningfully lower cost than my current retainer,</strong> running the fully documented systems I've built.</li>
+  </ul>
+
+  <p>Compared to the realistic alternative &mdash; keeping me at IMF in my current role <em>and</em> hiring separately for U.S. localization <em>and</em> hiring separately for AI strategy &mdash; this structure costs the parent company significantly less while delivering far more strategic coverage.</p>
+
+  <p>That feels like the right shape for a long-term partnership: the parent company gets more value per dollar, I move into work where my strengths compound, and both sides win.</p>
+
+  <p>We can of course talk through the details.</p>
+
+  <h3>Closing</h3>
+  <p>Owen, thank you for the time and care you've shown across this conversation. I love this company, I want to be here for many more years, and I want my work to land where it creates the most value &mdash; for IMF, for MyyShop, for DHgate, and for the parent company as a whole.</p>
+
+  <p>I'm not in a rush. As you take the next few weeks to review, I'm available for any follow-up questions and ready to meet with either Frank, Tracy, or both of them in whatever format you suggest. I'd also welcome your guidance on the right time and the right way to bring Debi into this conversation.</p>
+
+  <p>Whatever you think the next step should be, I trust your judgment.</p>
+
+  <div class="signature">
+    With gratitude,
+    <strong>Aventurina</strong>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <a href="#" onclick="window.print();return false;">Print this proposal</a>
+  &middot;
+  <span>Prepared by Aventurina King &middot; May 2026</span>
+</footer>
+
+<script>
+  (function() {
+    var buttons = document.querySelectorAll('nav.tabs button');
+    var contents = document.querySelectorAll('.tab-content');
+
+    function activate(tab) {
+      buttons.forEach(function(btn) {
+        btn.classList.toggle('active', btn.dataset.tab === tab);
+      });
+      contents.forEach(function(c) {
+        c.classList.toggle('active', c.id === tab);
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Update URL hash without jumping
+      if (history.replaceState) {
+        history.replaceState(null, '', '#' + tab);
+      }
+    }
+
+    buttons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        activate(btn.dataset.tab);
+      });
+    });
+
+    // Initialize from URL hash if present
+    var initialTab = window.location.hash.replace('#', '');
+    var validTabs = ['opening', 'tech', 'marketing', 'transition'];
+    if (validTabs.indexOf(initialTab) !== -1) {
+      activate(initialTab);
+    }
+  })();
+</script>
+
+</body>
+</html>

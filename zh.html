@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于服务母公司的提案 — 金小鱼 · 2026年5月</title>
+<meta name="description" content="金小鱼 准备的角色提案，5月6日与 Owen 对话后撰写。">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<style>
+  :root {
+    --bg: #FBF9F4;
+    --bg-alt: #F3EDE0;
+    --bg-callout: #EFE9DC;
+    --text: #1F2937;
+    --text-muted: #6B7280;
+    --accent: #3A6951;
+    --accent-dark: #2C5240;
+    --accent-light: #DCE8E2;
+    --border: #E5DFD3;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Segoe UI", "Helvetica Neue", sans-serif;
+    font-size: 17px;
+    line-height: 1.85;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Header */
+  header.site-header {
+    text-align: center;
+    padding: 64px 24px 32px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    position: relative;
+  }
+
+  header.site-header h1 {
+    margin: 0 0 12px;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: clamp(26px, 4vw, 36px);
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: 0.01em;
+    line-height: 1.35;
+  }
+
+  header.site-header .meta {
+    color: var(--text-muted);
+    font-size: 15px;
+    margin: 0;
+    line-height: 1.7;
+  }
+
+  header.site-header .meta strong {
+    color: var(--accent-dark);
+    font-weight: 600;
+  }
+
+  /* Language Switcher */
+  .lang-switch {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    gap: 4px;
+    background: var(--bg-alt);
+    border-radius: 20px;
+    padding: 4px;
+    font-size: 13px;
+  }
+
+  .lang-switch a, .lang-switch span {
+    padding: 5px 12px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .lang-switch .active {
+    background: var(--accent);
+    color: white;
+  }
+
+  .lang-switch a:hover {
+    color: var(--accent-dark);
+  }
+
+  /* Tabs */
+  nav.tabs {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  nav.tabs::-webkit-scrollbar { display: none; }
+
+  nav.tabs .tabs-inner {
+    display: flex;
+    gap: 4px;
+    max-width: 920px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav.tabs button {
+    background: transparent;
+    border: none;
+    padding: 18px 22px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    white-space: nowrap;
+  }
+
+  nav.tabs button:hover {
+    color: var(--accent-dark);
+  }
+
+  nav.tabs button.active {
+    color: var(--accent-dark);
+    border-bottom-color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* Main */
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+
+  .tab-content { display: none; }
+  .tab-content.active { display: block; animation: fadeIn 0.25s ease; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* Typography */
+  h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: clamp(23px, 3vw, 28px);
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 8px;
+    line-height: 1.4;
+  }
+
+  h2 + .subhead {
+    color: var(--accent-dark);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin: 0 0 28px;
+  }
+
+  h3 {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 40px 0 14px;
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    margin: 28px 0 10px;
+    line-height: 1.5;
+  }
+
+  p { margin: 0 0 16px; }
+  strong { font-weight: 600; color: var(--text); }
+  em { font-style: italic; }
+
+  main a {
+    color: var(--accent-dark);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-light);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.15s ease;
+  }
+
+  main a:hover {
+    text-decoration-color: var(--accent);
+  }
+
+  ul, ol {
+    margin: 0 0 20px;
+    padding-left: 22px;
+  }
+
+  ul li, ol li {
+    margin-bottom: 12px;
+  }
+
+  ul li::marker { color: var(--accent); }
+  ol li::marker { color: var(--accent); font-weight: 600; }
+
+  /* Callouts */
+  .callout {
+    background: var(--bg-callout);
+    border-left: 3px solid var(--accent);
+    padding: 22px 26px;
+    margin: 28px 0;
+    border-radius: 4px;
+  }
+
+  .callout h3 {
+    margin-top: 0;
+    color: var(--accent-dark);
+  }
+
+  .callout p:last-child { margin-bottom: 0; }
+
+  .callout .source {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-style: italic;
+    margin: 12px 0 0;
+  }
+
+  /* Credential blocks */
+  .credential-block {
+    margin: 24px 0;
+  }
+
+  .credential-block .label {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-weight: 600;
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 0 12px;
+  }
+
+  /* Signature */
+  .signature {
+    margin-top: 36px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-style: italic;
+  }
+
+  .signature strong {
+    display: block;
+    margin-top: 6px;
+    font-style: normal;
+    color: var(--accent-dark);
+    font-size: 18px;
+  }
+
+  /* Footer */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 24px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 13px;
+  }
+
+  footer a {
+    color: var(--accent-dark);
+    text-decoration: none;
+    margin: 0 12px;
+  }
+
+  footer a:hover { text-decoration: underline; }
+
+  /* Fit chip */
+  .fit-chip {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--accent-light);
+    color: var(--accent-dark);
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    header.site-header { padding: 56px 18px 24px; }
+    .lang-switch { top: 14px; right: 14px; font-size: 12px; }
+    main { padding: 32px 18px 64px; }
+    nav.tabs { padding: 0 8px; }
+    nav.tabs button { padding: 14px 14px; font-size: 14px; }
+    .callout { padding: 18px 20px; }
+  }
+
+  /* Print */
+  @media print {
+    nav.tabs, footer, .lang-switch { display: none; }
+    .tab-content { display: block !important; page-break-before: always; }
+    .tab-content:first-of-type { page-break-before: auto; }
+    body { font-size: 12pt; }
+    header.site-header { border-bottom: 1px solid #333; }
+    .callout { border: 1px solid #ccc; background: #f8f8f8; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="lang-switch">
+    <a href="index.html">English</a>
+    <span class="active">中文</span>
+  </div>
+  <h1>我如何为母公司创造价值</h1>
+  <p class="meta"><strong>金小鱼</strong> · 2026年5月 · 在5月6日与 Owen 对话后撰写</p>
+</header>
+
+<nav class="tabs">
+  <div class="tabs-inner">
+    <button data-tab="opening" class="active">开场</button>
+    <button data-tab="tech">技术职位 <span style="opacity:0.6;font-weight:500;">· 核心匹配</span></button>
+    <button data-tab="marketing">营销职位 <span style="opacity:0.6;font-weight:500;">· 次要匹配</span></button>
+    <button data-tab="transition">过渡与条款</button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ 开场 ============ -->
+<section id="opening" class="tab-content active">
+  <h2>开场</h2>
+  <p class="subhead">小鱼的开篇 · 2026年5月</p>
+
+  <p>Owen，再次感谢您在5月6日与我进行的深入交流。按照您的要求，这份文档将围绕我如何最大程度地为母公司服务来展开。</p>
+
+  <p>从我们的对话中，浮现出两个角色。我想坦诚地表达我的偏好：<strong>技术角色是最核心的匹配</strong>，也是我最希望成长的方向。<strong>与 Tracy 合作的营销角色是次要匹配</strong>，基于您善意提及的新闻背景。这两个角色我都乐意承担，而且我也看到了将两者元素结合的可能性。</p>
+
+  <p>我还回应了您对 IMF 的关切——我将交接哪些工作、谁可以继续推进、以及合理的时间安排——同时也探讨了全职与兼职的结构问题。</p>
+
+  <p>这是我经过深思熟虑后，对如何在未来一年及更长时间里，为您、Tracy、Frank 以及整个母公司创造最大价值的思考。我相信您会从您的角度给出最合适的指导。</p>
+
+  <div class="callout">
+    <h3>阅读指南</h3>
+    <ul style="margin-bottom:0;">
+      <li><strong>技术职位</strong>——我的核心匹配。负责新技术产品的美国本地化，以及覆盖母公司的 AI 战略。<span class="fit-chip">核心</span></li>
+      <li><strong>营销职位</strong>——次要匹配，作为 Tracy 在美国的内部合作伙伴，以 DHgate 品牌重塑为起点。<span class="fit-chip">次要</span></li>
+      <li><strong>过渡与条款</strong>——全职与兼职、IMF 交接计划、时间表、薪酬。</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ============ 技术职位 ============ -->
+<section id="tech" class="tab-content">
+  <h2>角色一：美国技术联络官 + AI 战略</h2>
+  <p class="subhead">核心匹配</p>
+
+  <h3>我将负责的内容</h3>
+  <p>这是一个单一角色，涵盖母公司目前在美国这边没有双语人才负责的两个相关领域：</p>
+
+  <h4>领域 A——母公司开发的任何新技术产品的美国市场调研与本地化</h4>
+  <p>对于每一个新技术产品（新的 IMF 对话式 AI 应用、MyyShop 即将推出的数字产品、以及母公司未来的产品），我将负责：</p>
+  <ul>
+    <li><strong>产品开发前的美国市场调研。</strong>这个品类在美国的市场格局如何？类似产品通常如何定位、包装和推广？美国用户对这类体验的实际期望是什么？</li>
+    <li><strong>开发过程中的文化与语言本地化，而非事后补救。</strong>文案、用户体验语言、用户引导流程、命名、视觉美学——在产品设计阶段就针对美国受众进行调整，而不是在发布之后。</li>
+    <li><strong>营销文案与设计反馈，</strong>与中国团队的设计师（已与王正在 IMF 设计稿的英文文案上合作）和技术负责人（已与刘跃祖在 IMF 网站上进行协调）协同工作。</li>
+  </ul>
+
+  <h4>领域 B——为母公司的美国业务提供 AI 系统与自动化支持</h4>
+  <p>每周都有新的 AI 工具从美国涌现。由于没有双语人士从内部关注这个生态系统，大多数工具都无法传回中国。我将：</p>
+  <ul>
+    <li><strong>搜寻、测试并部署 AI 工具，</strong>让每个美国业务都更高效。</li>
+    <li><strong>针对特定业务问题构建定制化 AI 代理。</strong>具体例子：我与 MyyShop 的 Kenan 就一个影响者推广的 AI 框架进行了初步沟通。他们目前的工作推广量很大，耗费大量人力。我可以构建一个自动化代理系统——利用 Apify 等工具抓取影响者和公司数据，评估匹配度，起草个性化推广文案——从而简化整个流程。</li>
+  </ul>
+
+  <h4>此外，无论最终确定哪个角色：持续为 Diane 提供直接支持</h4>
+  <ul>
+    <li>随时为 Diane 个人提供支持——包括美国方面的面试准备、内容审核，或她需要我直接提供的任何其他支持。无论其他部分如何架构，这都包含在职责范围内。</li>
+  </ul>
+
+  <h3>日常工作形态</h3>
+  <ul>
+    <li><strong>周一至周五交付工作成果。</strong>整个工作周内完成研究、构建、文案和设计反馈。</li>
+    <li><strong>与中国技术团队定期每周通话：每次 1–1.5 小时，每周 2–3 次（例如每周一和每周三）。</strong>安排在洛杉矶时间周一至周四晚间，对应中国时间上午 10:00–11:30，适合 Frank、刘跃祖及更广泛技术团队的工作时间。</li>
+    <li><strong>白天专注于美国侧 AI 实施工作，</strong>服务于 MyyShop 及其他总部位于美国的企业——与 Kenan 及其团队会面、构建智能体、部署工具。</li>
+    <li><strong>工作日美国工作时间可参加非定期会议，需提前充分通知</strong>——临时同步会、与 Tracy 或 Diane 的专项会议，或任何超出常规中国技术节奏的会议。</li>
+    <li><strong>我对会议的态度：</strong>我希望该角色专注于交付成果，而非会议负担。可预测的定期时段加上提前通知的临时会议，既能确保高效沟通，又不占用真正推动项目前进的深度工作时间。</li>
+  </ul>
+
+  <h3>这对利润的贡献</h3>
+  <ol>
+    <li><strong>首次尝试即实现更快的产品市场匹配。</strong>无需先在中国构建产品、在美国发布、观察其表现不佳后再进行本地化——美国视角从一开始就参与其中。每次发布可节省数月时间。</li>
+    <li><strong>母公司级别的 AI 杠杆效应。</strong>一个双语 AI 构建者可以为 IMF、MyyShop 和 DHgate 部署系统，而这些系统原本需要多个机构或完整团队才能完成。</li>
+    <li><strong>比外部机构成本更低、忠诚度更高。</strong>内部人员对所有三个业务都拥有机构背景知识。而机构每次都需要从头学习。</li>
+    <li><strong>为从中国通过 VPN 难以触及的美国服务提供可靠桥梁</strong>——这不会出现在组织架构图上，但每周都至关重要。</li>
+  </ol>
+
+  <div class="callout">
+    <h3>警示案例：没有美国本地化参与会发生什么</h3>
+    <p>一个近期且直接相关的例子：<strong>TikTok Shop 在美国（2024-2026年）。</strong>TikTok Shop 最初的市场发布严重依赖英语不流利、缺乏美国文化素养的中国卖家。平台自身的质量评级系统内部标记了问题："糟糕的英语体验、主播英语能力弱或中英混杂、过多中国文化元素、或内容不符合当地文化规范。"转化率受损，用户体验受损。</p>
+    <p>解决方案正是我提议的角色：TikTok 有意限制跨境直播，并招募具有母语英语专业知识的美国本地化内容创作者和主播。字节跳动更广泛的美国战略也遵循了相同模式——为美国文化偏好修改内容算法，并雇佣本地团队管理特定市场的运营。</p>
+    <p>对母公司的教训很简单：<strong>本地化不是翻译，它必须在构建过程中进行，而不是在发布之后。</strong>一个具有文化素养、技术直觉和产品判断力的双语美国人从一开始就参与其中，是中国公司向美国扩张所能买到的最具性价比的保险。</p>
+    <p class="source">来源：Chinesellers 对 TikTok Shop 美国发布的分析（2026年）；TSU 对字节跳动全球本地化战略的研究。</p>
+  </div>
+
+  <h3>支撑此角色的项目与背景</h3>
+
+  <div class="credential-block">
+    <p class="label">构建者资质</p>
+    <ul>
+      <li><strong><a href="https://www.oasifysocial.com" target="_blank" rel="noopener">Oasify Social</a></strong>——我构建的一个完整的社交媒体情报应用（线上访问：<a href="https://www.oasifysocial.com" target="_blank" rel="noopener">www.oasifysocial.com</a>）。技术栈包括 React Router + Drizzle ORM + Vite + Postgres，集成了 Meta/Instagram 和 Google OAuth，具备 AI 驱动的内容同步算法，以及跨多个模型提供商（GPT-4o、Claude Haiku/Sonnet、Gemini Flash）的提示验证。我坦诚地承认，我雇佣了一位工程师在过程中指导我，我们共同构建了这个应用——这意味着我对现代技术框架有更深入、更实用的理解，而不仅仅是表面熟悉。</li>
+      <li><strong>AI 代理训练营（1个月，高强度）</strong>——使用 Python 和 VS Code 构建并部署了 AI 代理。在训练营之前和期间完成了中级 Python 课程。</li>
+      <li><strong>我构建并投入生产的推广 AI 代理。</strong>从 Apollo 拉取潜在客户列表，抓取每个潜在客户的网站以评估匹配度，生成个性化关键词，并将其输入冷邮件活动。结果：约 80% 的打开率，约 10% 的回复率。使用 Python 和 VS Code 端到端构建。</li>
+      <li><strong>持续进行机器学习基础的自学，</strong>以加深对我部署的 AI 工具底层工作原理的理解——从而支持更明智的搜寻、评估和集成从美国市场涌现的新 AI 产品。</li>
+    </ul>
+  </div>
+
+  <div class="credential-block">
+    <p class="label">提议的层级结构及我在团队中的定位</p>
+    <p>我将向 <strong>Frank</strong> 汇报，并与中国技术团队直接合作。这是一个自然的匹配，因为我已经融入了他们的工作流程，并与团队建立了真正的融洽关系：</p>
+    <ul>
+      <li>与<strong>刘跃祖（L）</strong>协调 IMF 网站营销文案和实施。</li>
+      <li>与<strong>王正</strong>合作，在设计稿中实施英文文案。</li>
+      <li>已与 <strong>MyyShop 的 Kenan</strong> 就影响者推广的 AI 框架进行了初步沟通——他对此非常感兴趣。</li>
+    </ul>
+  </div>
+
+  <div class="credential-block">
+    <p class="label">增强此角色的双语与跨文化资质</p>
+    <ul>
+      <li>母语级别的双语（英语+普通话），对两种商业文化都有深入的实践知识。</li>
+      <li>最高专业水平的文化翻译工作（见营销部分的背景介绍——许多相同的资质同样服务于两个角色）。</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ============ 营销职位 ============ -->
+<section id="marketing" class="tab-content">
+  <h2>角色二：与 Tracy 合作的美国内部营销联络官</h2>
+  <p class="subhead">次要匹配</p>
+
+  <h3>我将负责的内容</h3>
+  <p>这个角色是母公司美国扩张的更广泛战略。目前最活跃的参与是 Tracy 领导下的 DHgate 品牌重塑——这是需求所在，也是我的起点。随着时间的推移，同样的角色将扩展到母公司其他美国扩张工作中。</p>
+
+  <p>五大支柱，全部围绕成为 Tracy 的内部美国合作伙伴：</p>
+
+  <ol>
+    <li><strong>与 Tracy 聘请的机构（美讯）的内部联络人。</strong>作为美国方面的桥梁参加机构会议。以从中国难以做到的方式——部分原因是 VPN 和网站访问限制，部分原因是文化细微差别只有身处市场内部才能体会——实地验证执行和质量。机构积累的联系人和经验通过我流动，这意味着当机构合作结束时，它们会留在 DHgate（更多内容见支柱5）。</li>
+    <li><strong>研究与放大。</strong>在机构工作的同时，我寻找新的角度、新的途径以及超越受聘机构所能触及范围的方法来扩大影响力。研究是我最深厚的优势之一——我喜欢深入问题的表面之下，找到别人未曾关注的角度。</li>
+    <li><strong>为 DHgate 品牌重塑担任影响者联络人。</strong>与将参与品牌重塑的美国影响者建立直接关系——包括那些将访问中国的影响者。确保他们发布的内容落地良好、符合品牌目标，并反映您正在构建的公司。这正是您在对话中提到的角色。<strong>我以前做过这项工作：</strong>在早期与美国 MCN（多频道网络）合作的品牌活动中，我为包括<strong>娇韵诗（Clarins）</strong>在内的主要品牌管理影响者项目，我的核心职责是确保每位创作者的内容与品牌声音保持紧密一致。DHgate 品牌重塑需要的正是这种一致性工作。</li>
+    <li><strong>基于我新闻背景的公关策略。</strong>美国对中国原产地品牌有特定的看法，必须加以引导，而非忽视。我可以塑造公关叙事、语言和定位，使品牌脱颖而出，而非逆风而行。美国媒体有其特定信号，一位美国记者学会解读这些信号；我可以利用这些信号来获得对公司有利的报道。</li>
+    <li><strong>内部价值保留。</strong>雇佣我而非仅仅依赖机构的最大理由：<strong>我建立的关系将留在母公司。</strong>当机构合作结束时，机构的联系人会随机构离开。当我与影响者、记者、社区成员建立关系时，这种关系将永久属于 IMF/DHgate/母公司。</li>
+  </ol>
+
+  <p><strong>此外，无论最终确定哪个角色：持续为 Diane 提供直接支持。</strong>随时为 Diane 个人提供支持——包括美国方面的面试准备、内容审核，或她需要我直接提供的任何其他支持。无论其他部分如何架构，这都包含在职责范围内。</p>
+
+  <h3>这对利润的贡献</h3>
+  <ul>
+    <li><strong>有我作为内部桥梁，机构合作将更加顺畅。</strong>Tracy 无论如何都会聘请机构——问题在于母公司能否从这种关系中获得全部价值，还是部分价值。有我作为美国方面的联络人嵌入：更少的重复简报、更少的翻译延迟、更快的周转，并且关系资本（联系人、经验、机构记忆）在公司内部积累，而不是在机构合作结束时消失。</li>
+    <li><strong>更快的反应时间</strong>——当事情出现偏差时，美国内部人员可以在几小时内介入，而不是等待下一次预定的状态会议。</li>
+    <li><strong>受聘机构无法带来的战略深度</strong>——机构按范围执行。内部合作伙伴能看到相邻的机会并将其带来。</li>
+    <li><strong>文化保险</strong>——美国对中国原产地品牌的看法是一个真实的公关变量；驾驭它需要一位生活在两个世界中的人。</li>
+  </ul>
+
+  <div class="callout">
+    <h3>一个实际案例：William Rossy 的 YouTube 漏斗</h3>
+    <p>当中国团队协调 Diane 与 William Rossy 的访谈时，团队的本能是庆祝视频发布并继续前进。我看到了一个从中国方面无法看到的漏斗机会。</p>
+    <p>我研究了 William Rossy 现有的产品，以了解他能做什么、不能做什么，以免与他自己的营销冲突。然后，我为他撰写了一条置顶评论和描述行补充，将他受众对 Diane 的好奇心直接引导至 IMF 社区和 IMF 网站。他接受了。</p>
+    <p>结果是 IMF 社区成员显著增长——围绕 Diane 的关注度原本会停留在 William Rossy 的频道上，现在被引导到了公司拥有的受众中。</p>
+    <p>这就是内部美国合作伙伴能带来的、机构通常无法提供的价值：不仅仅是执行活动，而是看到他人交付成果内部的二阶机会。</p>
+  </div>
+
+  <h3>支撑此角色的项目与背景</h3>
+
+  <div class="credential-block">
+    <p class="label">新闻与编辑资质（Owen 提到的资质）</p>
+    <ul>
+      <li><strong>《纽约时报》自由撰稿人，</strong>报道中国艺术与文化。</li>
+      <li><strong>《牛津中英词典》翻译编辑</strong>——最高水平的双语编辑信誉。</li>
+      <li><strong>华谊兄弟公关经理</strong>——将工作室从几乎没有美国媒体认知度，带到数十篇美国主要出版物专题报道，包括一篇我通过精准定位和推介亲自帮助获得的<em>《纽约时报》</em>专题报道。</li>
+    </ul>
+  </div>
+
+  <div class="credential-block">
+    <p class="label">跨文化营销机构领导经验</p>
+    <ul>
+      <li><strong>领导大白兔美国社交媒体活动</strong>——获得超过 10 万次观看，为病毒式广告活动招募了 40 多位影响者，为美国市场贡献了 400 万美元的年收入。</li>
+      <li><strong>与娇韵诗（及其他通过 MCN 合作的美国品牌）的影响者一致性工作</strong>——管理多创作者活动，核心职责是保持每位影响者的内容与品牌声音和定位紧密一致。</li>
+    </ul>
+  </div>
+
+  <div class="credential-block">
+    <p class="label">IMF 实时案例</p>
+    <ul>
+      <li><strong>WhatsApp 社区。</strong>从零开始建立。现在是一个活跃的社区，成员每天都在互动。设计了有趣的投票和互动结构，推动了日常活跃行为。</li>
+      <li><strong>2026 年第一季度社交媒体表现对比合同 OKR——全面达到或超过目标。</strong>粉丝数：TikTok 平均每月增长 128 人（比 100 人的目标高出 28%）；Instagram 在 3 月份加速增长至 207 人。<strong>观看量：第一季度最后一个月实现了约 10 倍的合同目标——3 月份总观看量 34.4 万次，而目标为 3.5 万次。</strong>每月互动率均高于 3% 的合同目标，3 月份综合互动率达到 7.7%。最热门的病毒式帖子：<strong>23 万次观看，1.7 万次点赞，6000 次收藏。</strong></li>
+      <li><strong>William Rossy YouTube 漏斗</strong>（如上所述）。</li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- ============ 过渡与条款 ============ -->
+<section id="transition" class="tab-content">
+  <h2>过渡与条款</h2>
+  <p class="subhead">全职与兼职、IMF 交接、时间表、薪酬</p>
+
+  <h3>关于全职与兼职</h3>
+  <p>您提到母公司倾向于全职，我想直接回应这个问题，而不是让它悬而未决。</p>
+
+  <p>我诚实的立场是：由于我的工作方式，我作为兼职员工能提供全职产出。强大的系统、自动化和流程设计让一个人能产生过去需要一个完整团队才能完成的产出。</p>
+
+  <p>以下是结构性论证。<strong>在典型的美国公司中，社交媒体内容制作、冷邮件推广和数字广告通常各自拥有专门的团队——三个团队，通常每个团队有多人。我作为一个人运行所有这三个方面，凭借精心设计的系统和流程来承担杠杆作用。</strong>仅过去几个月 IMF 的具体例子：</p>
+
+  <ul>
+    <li><strong>每天在七个平台上发布原创社交媒体内容。</strong>这种体量通常需要一个小的内容团队加一个社区经理。</li>
+    <li><strong>大规模电子邮件活动，</strong>包括通过我建立的 Instantly 基础设施发送的数千封邮件——已接入 40 个收件箱，A/B 测试的冷邮件管道准备就绪。一个人完成了一个完整的冷邮件功能。</li>
+    <li><strong>我帮助构建和撰写文案的 IMF 网站，</strong>在过去几周内已将大约 <strong>75 名新社区成员</strong>引导至 IMF 生态系统。</li>
+    <li><strong>WhatsApp 社区</strong>在短短几个月内从零发展到 71 名活跃成员，成员每天都在互动。</li>
+  </ul>
+
+  <p>我分享这些不是为了重提过去，而是为了证明<strong>我带来的杠杆作用是结构性的，而非基于努力。</strong>与我建立兼职合作关系，母公司能获得比大多数全职员工更高的单位产出价值。</p>
+
+  <p>还有一点值得一提。随着过去几个月 IMF 范围的扩大——从社交媒体扩展到邮件基础设施、社区建设、公关支持、磁铁漏斗和网站建设——我从未要求相应的加薪。我将母公司视为一个成熟的业务，在美国仍以创业精神运营，而创业精神需要灵活性、广度和主人翁精神。我以这三种精神投入工作，并将以同样的态度承担新的角色。</p>
+
+  <p>我理解您对全职的偏好，并且我愿意在设计新角色时讨论结构问题。我希望对话跟随工作本身——一旦我们明确了新角色到底是什么、实际需要什么，合适的结构就会变得更加清晰。</p>
+
+  <h3>关于交接我当前的 IMF 职责</h3>
+  <p>在 5 月 6 日的对话中，我提到即使在角色变更后，我也可以保留部分相关的 IMF 工作。经过反思，更清晰的路径——对 IMF、对母公司、对我自己——是<strong>完整的结构化交接</strong>。以下是范围、原因和方法。</p>
+
+  <h4>交接范围</h4>
+  <p>我目前在 IMF 美国大师班营销范围内负责的所有内容都将清晰交接给接替者：</p>
+  <ul>
+    <li>七个平台的所有社交媒体制作</li>
+    <li>WhatsApp 社区</li>
+    <li>周五通讯</li>
+    <li>电子邮件活动基础设施（Instantly、40 个收件箱、第二季度架构）</li>
+    <li>HubSpot 磁铁漏斗</li>
+    <li>内容制作系统和脚本管道</li>
+    <li>与 Annie 在邮件/HubSpot 方面的所有持续协调</li>
+  </ul>
+  <p>这些都不会随我进入新角色。它们将完整移交给接替者，以便 IMF 美国有一个明确的责任人，而不是分割管理。</p>
+
+  <h4>汇报线</h4>
+  <p>我的新角色将接受您的判断——可能是营销方面的 Tracy 或技术方面的 Frank——而不是 IMF 美国大师班团队。我只会作为平级同事与 Debi 互动，当她是我为 Tracy 或 Frank 运行的项目中的利益相关者时。这对每个人来说都是最清晰的结构：Debi 拥有 IMF 美国的完全所有权，由一位专门的接替者负责她的日常工作，而我则转向我的优势能够产生复合效应的工作。</p>
+
+  <h4>为什么为 IMF 招聘初级接替者可行（且成本可能更低）</h4>
+  <p>由于框架已经存在，接替者不需要是高级人员。一个能够执行良好文档化操作手册的、有能力的初级营销人员，可以以比我当前顾问费低得多的成本运行 IMF 的日常工作。战略性和创造性工作——证明更高成本合理性的部分——已经构建并系统化了。</p>
+  <p><strong>这对母公司来说财务上更有利：</strong>您得到一个经过培训的初级人员来运行一个完全文档化的系统，而我则转向一个我的技术和战略优势能够在 IMF、MyyShop 和 DHgate 产生复合效应的角色。</p>
+
+  <h4>我准备做的事情</h4>
+  <ul>
+    <li><strong>对我构建的每个系统进行完整文档化</strong>——社交媒体引擎、WhatsApp 操作手册、邮件基础设施、HubSpot 漏斗、周五通讯格式、内容管道。接替者学习运行系统，而不是发明它们。</li>
+    <li><strong>在重叠期内与接替者直接合作。</strong>我随时可以提供指导、故障排除和扫清障碍。交接完成后，如有需要，我可以进行定期接触。</li>
+  </ul>
+
+  <h4>提议的时间表</h4>
+  <ul>
+    <li><strong>5 月 11 日至 5 月 30 日：</strong>我们一起确定新角色的形态——我们已经处于这个私密构建窗口期。</li>
+    <li><strong>角色确认后：</strong>我与 Debi 进行交接对话。</li>
+    <li><strong>6 月 1 日至 7 月 31 日：</strong>两个月的重叠期。我培训 IMF 初级接替者，同时以当前质量继续所有 IMF 交付成果。</li>
+    <li><strong>2026 年 8 月 1 日：</strong>新角色开始。我当前的 IMF 合同于 2026 年 7 月 31 日自然到期，因此这与续约周期完美对齐——这是一个计划中的过渡，而非硬性切换。</li>
+  </ul>
+
+  <h3>关于薪酬</h3>
+  <p>我想在此明确一个数字，以便薪酬结构的讨论能够继续推进，而不是卡在最后环节。<strong>对于这个新职位，我提议维持我目前的顾问费标准，即 7,550 美元/月。</strong></p>
+
+  <p>原因在于：我的顾问费保持不变，但工作范围将显著扩大，超出当前在 IMF 的营销职责。<strong>在技术职位（我的核心匹配）方面</strong>，这意味着负责新 IMF AI 应用（在 Frank 领导下）的美国本地化、MyyShop 的数字产品，以及母公司层面的 AI 战略与代理构建工作。<strong>在营销职位（次要匹配）方面</strong>，则是在 Tracy 领导下进行 DHgate 的品牌重塑，并制定更广阔的美国市场扩张战略。</p>
+
+  <p><strong>坦诚地说：母公司在这些工作上的总支出会略有增加，因为您需要同时支付我 7,550 美元/月的顾问费（用于新职位）以及一位初级替代人员（负责 IMF 工作）。</strong>但这一增加带来的回报是：</p>
+
+  <ul>
+    <li><strong>相同的顾问费，更广阔的战略覆盖范围</strong>——与单一业务线（仅 IMF 营销）不同，新职位将覆盖母公司的多个业务板块。<strong>技术职位：</strong>新 IMF AI 应用的美国本地化（在 Frank 领导下——与我将交接的 IMF 营销范围分开）、MyyShop 的数字产品，以及覆盖所有三个业务的 AI 战略。<strong>营销职位：</strong>在 Tracy 领导下进行 DHgate 的品牌重塑，并制定更广阔的美国市场扩张战略。</li>
+    <li><strong>将美国本地化和 AI 战略工作内部化，</strong>否则就需要以高得多的成本聘请外部专家或代理机构。</li>
+    <li><strong>一位初级 IMF 负责人，成本远低于我目前的顾问费，</strong>负责运营我已建立并文档化的完整体系。</li>
+  </ul>
+
+  <p>与现实的替代方案相比——即让我继续在 IMF 担任现有职位，<em>同时</em>另行聘请人员负责美国本地化，<em>再</em>另行聘请人员负责 AI 战略——这种结构为母公司节省了大量成本，同时提供了更广泛的战略覆盖。</p>
+
+  <p>这感觉是长期合作关系的正确形态：母公司每投入一美元获得更多价值，我则转向能发挥我优势的工作，双方共赢。</p>
+
+  <p>当然，我们可以详细讨论具体细节。</p>
+
+  <h3>结语</h3>
+  <p>Owen，感谢您在整个对话中投入的时间和关怀。我热爱这家公司，我希望在这里工作很多年，我希望我的工作能够落在创造最大价值的地方——为 IMF、为 MyyShop、为 DHgate、为整个母公司。</p>
+
+  <p>我不急于求成。在您接下来几周审阅的过程中，我随时可以回答任何后续问题，并愿意以您建议的任何形式与 Frank、Tracy 或他们两位会面。我也欢迎您就何时以及如何将 Debi 引入此对话提供指导。</p>
+
+  <p>无论您认为下一步应该是什么，我都相信您的判断。</p>
+
+  <div class="signature">
+    满怀感激，
+    <strong>小鱼</strong>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <a href="#" onclick="window.print();return false;">打印此提案</a>
+  &middot;
+  <span>由 金小鱼 撰写 · 2026年5月</span>
+</footer>
+
+<script>
+  (function() {
+    var buttons = document.querySelectorAll('nav.tabs button');
+    var contents = document.querySelectorAll('.tab-content');
+
+    function activate(tab) {
+      buttons.forEach(function(btn) {
+        btn.classList.toggle('active', btn.dataset.tab === tab);
+      });
+      contents.forEach(function(c) {
+        c.classList.toggle('active', c.id === tab);
+      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      if (history.replaceState) {
+        history.replaceState(null, '', '#' + tab);
+      }
+    }
+
+    buttons.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        activate(btn.dataset.tab);
+      });
+    });
+
+    var initialTab = window.location.hash.replace('#', '');
+    var validTabs = ['opening', 'tech', 'marketing', 'transition'];
+    if (validTabs.indexOf(initialTab) !== -1) {
+      activate(initialTab);
+    }
+  })();
+</script>
+
+</body>
+</html>
